@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Become a Facilitator — FFDC</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,serif;color:#1a1a2e;background:#fff;font-size:16px;line-height:1.7}
+nav{background:#1b3a6b;padding:14px 32px;display:flex;justify-content:space-between;align-items:center}
+nav a{color:#c9a84c;font-size:14px;text-decoration:none;font-family:sans-serif}
+.hero{background:#1b3a6b;padding:72px 32px;text-align:center}
+.hero span{display:inline-block;background:rgba(201,168,76,.15);color:#c9a84c;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;margin-bottom:20px;font-family:sans-serif}
+.hero h1{color:#fff;font-size:clamp(28px,5vw,48px);line-height:1.2;margin-bottom:18px}
+.hero h1 em{color:#c9a84c;font-style:normal}
+.hero p{color:rgba(255,255,255,.8);font-size:17px;max-width:580px;margin:0 auto 32px;font-family:sans-serif}
+.cta{display:inline-block;background:#c9a84c;color:#112448;font-family:sans-serif;font-size:14px;font-weight:700;letter-spacing:.05em;padding:13px 32px;text-decoration:none}
+.cta:hover{background:#e8c76a}
+section{padding:64px 32px}
+.inner{max-width:720px;margin:0 auto}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#c9a84c;font-family:sans-serif;margin-bottom:10px}
+h2{font-size:clamp(22px,3vw,32px);color:#1b3a6b;margin-bottom:16px;line-height:1.25}
+.lead{font-size:17px;color:#5a5a70;font-family:sans-serif;margin-bottom:36px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{border:1px solid #e2e0d8;border-left:4px solid #1b3a6b;padding:20px;font-family:sans-serif}
+.card.gold{border-left-color:#c9a84c}.card.green{border-left-color:#2e7d32}.card.orange{border-left-color:#e07b39}
+.card h3{font-size:15px;color:#1b3a6b;margin-bottom:6px;font-family:Georgia,serif}
+.card p,.card li{font-size:13px;color:#5a5a70;line-height:1.55}
+.card ul{list-style:none;padding:0}.card li{padding:3px 0 3px 14px;position:relative}
+.card li::before{content:'—';position:absolute;left:0;color:#c9a84c}
+.alt{background:#f4f2ec}
+.quote-band{background:#1b3a6b;padding:56px 32px;text-align:center}
+.quote-band blockquote{font-style:italic;font-size:clamp(17px,2.5vw,24px);color:#fff;max-width:600px;margin:0 auto 16px;line-height:1.55}
+.quote-band cite{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#c9a84c;font-family:sans-serif;font-style:normal}
+.form-wrap{background:#faf8f3}
+.form-box{background:#fff;border:1px solid #e2e0d8;font-family:sans-serif}
+.fh{background:#1b3a6b;padding:18px 28px;display:flex;align-items:center;gap:14px}
+.fn{width:30px;height:30px;background:#c9a84c;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#112448;flex-shrink:0}
+.fh h3{color:#fff;font-size:16px;font-family:Georgia,serif}
+.fh span{margin-left:auto;font-size:12px;color:rgba(255,255,255,.45)}
+.prog{height:3px;background:#e2e0d8}.prog-fill{height:100%;background:#c9a84c;transition:width .3s}
+.fb{padding:28px}
+.step{display:none}.step.on{display:block}
+.fg{margin-bottom:22px}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:12px;font-weight:700;color:#1b3a6b;letter-spacing:.02em;margin-bottom:6px}
+input,select,textarea{width:100%;padding:10px 12px;font-family:sans-serif;font-size:14px;color:#1a1a2e;border:1.5px solid #c8c6bc;outline:none}
+input:focus,select:focus,textarea:focus{border-color:#1b3a6b}
+textarea{resize:vertical;min-height:90px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px}
+.checks.one{grid-template-columns:1fr}
+.ci{display:flex;align-items:flex-start;gap:8px;padding:10px 12px;border:1.5px solid #e2e0d8;cursor:pointer;font-size:13px}
+.ci:hover{border-color:#1b3a6b}
+.ci input{width:auto;margin-top:2px;accent-color:#1b3a6b}
+.fnav{display:flex;justify-content:space-between;align-items:center;padding:20px 28px;background:#f4f2ec;border-top:1px solid #e2e0d8}
+.btn{font-family:sans-serif;font-size:13px;font-weight:700;letter-spacing:.04em;padding:11px 24px;border:none;cursor:pointer}
+.btn-p{background:#1b3a6b;color:#fff}.btn-p:hover{background:#112448}
+.btn-s{background:transparent;color:#5a5a70;border:1.5px solid #c8c6bc}.btn-s:hover{border-color:#1b3a6b;color:#1b3a6b}
+.btn-g{background:#c9a84c;color:#112448;font-size:14px;padding:13px 28px}.btn-g:hover{background:#e8c76a}
+.dots{display:flex;gap:7px;align-items:center}
+.dot{width:7px;height:7px;border-radius:50%;background:#c8c6bc}
+.dot.on{background:#1b3a6b;transform:scale(1.3)}.dot.done{background:#c9a84c}
+.success{display:none;padding:52px 28px;text-align:center}
+.success h3{font-size:22px;color:#1b3a6b;margin-bottom:10px}
+.success p{font-size:15px;color:#5a5a70;font-family:sans-serif}
+footer{background:#112448;padding:40px 32px;text-align:center}
+footer p{font-family:sans-serif;font-size:13px;color:rgba(255,255,255,.5);margin-bottom:4px}
+footer a{color:rgba(255,255,255,.6);text-decoration:none}.footer a:hover{color:#c9a84c}
+@media(max-width:600px){.grid,.fr,.checks{grid-template-columns:1fr}section{padding:48px 20px}}
+</style>
+</head>
+<body>
+<nav><a href="https://fourpillarsfamily.org">Faith &amp; Family Development Center</a><a href="https://fourpillarsfamily.org">← Back to site</a></nav>
+
+<div class="hero">
+  <span>Founding Faculty — Now Recruiting</span>
+  <h1>Your gifts were meant for<br><em>more than a waiting room.</em></h1>
+  <p>Join FFDC's facilitator network and bring your expertise into a structured, faith-integrated curriculum that transforms families across Atlanta and beyond.</p>
+  <a href="#apply" class="cta">Apply to Facilitate</a>
+</div>
+
+<section><div class="inner">
+  <p class="eyebrow">About FFDC</p>
+  <h2>Built on four pillars. Delivered through community.</h2>
+  <p class="lead">Everything FFDC does is organized around the Four Pillars Model — equipping people to break destructive patterns and build lives of purpose, connection, and stability.</p>
+  <div class="grid">
+    <div class="card"><h3>Personal Development</h3><p>Identity, purpose, and the patterns that shape every area of life.</p></div>
+    <div class="card gold"><h3>Healthy Relationships</h3><p>Communication, boundaries, and the foundations of secure connection.</p></div>
+    <div class="card green"><h3>Leadership</h3><p>Servant leadership, emotional intelligence, and lasting legacy.</p></div>
+    <div class="card orange"><h3>Family Stability</h3><p>Parenting, household systems, and generational healing.</p></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="inner">
+  <p class="eyebrow">Three Facilitator Tiers</p>
+  <h2>There's a place for you, wherever you're coming from.</h2>
+  <div class="grid" style="grid-template-columns:1fr 1fr 1fr">
+    <div class="card" style="border-left-color:#1b3a6b"><h3>Tier 1 — Core Faculty</h3><p style="margin-bottom:10px">LPCs · LMFTs · LCSWs</p><ul><li>Lead clinical tracks</li><li>In-person &amp; virtual cohorts</li><li>Revenue share comp</li></ul></div>
+    <div class="card gold"><h3>Tier 2 — Ministry Faculty</h3><p style="margin-bottom:10px">Ordained Ministers · Pastoral Counselors</p><ul><li>Faith integration</li><li>Church partnerships</li><li>Per-session or rev share</li></ul></div>
+    <div class="card green"><h3>Tier 3 — Coaches</h3><p style="margin-bottom:10px">ICF-Certified Coaches · Mentors</p><ul><li>1-on-1 coaching</li><li>Virtual &amp; flexible</li><li>Per-session flat fee</li></ul></div>
+  </div>
+</div></section>
+
+<div class="quote-band">
+  <blockquote>"If you believe that transformation is possible, that families can be healed, and that your gifts were meant for more than a waiting room — we want to hear from you."</blockquote>
+  <cite>Derrick · Founder, Faith &amp; Family Development Center</cite>
+</div>
+
+<section class="form-wrap" id="apply"><div class="inner">
+  <p class="eyebrow">Join the Founding Faculty</p>
+  <h2>Facilitator Interest Form</h2>
+  <p class="lead">Takes about 10 minutes. After submitting, someone from FFDC will be in touch within 3–5 business days.</p>
+  <div class="form-box">
+    <div class="prog"><div class="prog-fill" id="pf" style="width:20%"></div></div>
+    <form id="ff">
+    <div class="step on" data-s="1">
+      <div class="fh"><div class="fn">1</div><h3>Contact Information</h3><span>1 of 5</span></div>
+      <div class="fb">
+        <div class="fg fr"><div><label>First Name *</label><input name="firstName" required></div><div><label>Last Name *</label><input name="lastName" required></div></div>
+        <div class="fg fr"><div><label>Email *</label><input type="email" name="email" required></div><div><label>Phone *</label><input type="tel" name="phone" required></div></div>
+        <div class="fg"><label>City, State, ZIP *</label><input name="location" required></div>
+        <div class="fg"><label>Website / LinkedIn (optional)</label><input type="url" name="website"></div>
+      </div>
+    </div>
+    <div class="step" data-s="2">
+      <div class="fh"><div class="fn">2</div><h3>Professional Background</h3><span>2 of 5</span></div>
+      <div class="fb">
+        <div class="fg"><label>Background *</label>
+          <div class="checks"><label class="ci"><input type="radio" name="background" value="Licensed Therapist / Clinician" required><span>Licensed Therapist / Clinician</span></label><label class="ci"><input type="radio" name="background" value="Pastoral / Faith-Based Counselor"><span>Pastoral / Faith-Based Counselor</span></label><label class="ci"><input type="radio" name="background" value="Certified Coach"><span>Certified Life / Executive Coach</span></label><label class="ci"><input type="radio" name="background" value="Mentor / Practitioner"><span>Mentor / Practitioner</span></label></div>
+        </div>
+        <div class="fg"><label>Primary Credential *</label><input name="credential" placeholder="e.g. LPC, LMFT, MDiv, ICF-ACC" required></div>
+        <div class="fg fr"><div><label>License # (if applicable)</label><input name="licenseNum"></div><div><label>Issuing State</label><input name="licenseState"></div></div>
+        <div class="fg"><label>Current Employer / Affiliation *</label><input name="employer" required></div>
+        <div class="fg fr"><div><label>Years in Field *</label><select name="yearsField" required><option value="">Select…</option><option>Less than 1</option><option>1–3 years</option><option>3–5 years</option><option>5–10 years</option><option>10+ years</option></select></div><div><label>Years Facilitating Groups</label><select name="yearsGroups"><option value="">Select…</option><option>None yet</option><option>Less than 1</option><option>1–3 years</option><option>3–5 years</option><option>5+ years</option></select></div></div>
+        <div class="fg"><label>Describe your current practice or ministry focus *</label><textarea name="practiceFocus" rows="3" required></textarea></div>
+      </div>
+    </div>
+    <div class="step" data-s="3">
+      <div class="fh"><div class="fn">3</div><h3>Faith Alignment &amp; Availability</h3><span>3 of 5</span></div>
+      <div class="fb">
+        <div class="fg"><label>Your approach to faith in professional work *</label>
+          <div class="checks one"><label class="ci"><input type="radio" name="faith" value="Faith is central — I lead with it" required><span>Faith is central — I lead with it</span></label><label class="ci"><input type="radio" name="faith" value="Faith-informed — I integrate it naturally"><span>Faith-informed — I integrate it naturally</span></label><label class="ci"><input type="radio" name="faith" value="Faith-aware — I respect it but don't lead with it"><span>Faith-aware — I respect it but don't lead with it</span></label><label class="ci"><input type="radio" name="faith" value="Still developing"><span>Still developing my approach</span></label></div>
+        </div>
+        <div class="fg"><label>Program track(s) of interest *</label>
+          <div class="checks"><label class="ci"><input type="checkbox" name="tracks" value="Individuals"><span>Individuals</span></label><label class="ci"><input type="checkbox" name="tracks" value="Couples"><span>Couples</span></label><label class="ci"><input type="checkbox" name="tracks" value="Families"><span>Families</span></label><label class="ci"><input type="checkbox" name="tracks" value="Leaders"><span>Leaders</span></label><label class="ci" style="grid-column:1/-1"><input type="checkbox" name="tracks" value="Women's Program"><span>Women's Program — Whole &amp; Prepared</span></label></div>
+        </div>
+        <div class="fg"><label>Delivery format</label>
+          <div class="checks"><label class="ci"><input type="checkbox" name="format" value="In-Person"><span>In-Person (Atlanta)</span></label><label class="ci"><input type="checkbox" name="format" value="Virtual"><span>Virtual / Online</span></label></div>
+        </div>
+        <div class="fg"><label>Availability</label>
+          <div class="checks"><label class="ci"><input type="checkbox" name="avail" value="Weekday mornings"><span>Weekday mornings</span></label><label class="ci"><input type="checkbox" name="avail" value="Weekday evenings"><span>Weekday evenings</span></label><label class="ci"><input type="checkbox" name="avail" value="Saturday"><span>Saturday</span></label><label class="ci"><input type="checkbox" name="avail" value="Flexible"><span>Flexible</span></label></div>
+        </div>
+        <div class="fg fr"><div><label>Sessions/month</label><select name="sessions"><option value="">Select…</option><option>1–2</option><option>3–4</option><option>5–8</option><option>8+</option></select></div><div><label>Earliest start</label><input name="startDate" placeholder="e.g. July 2025"></div></div>
+      </div>
+    </div>
+    <div class="step" data-s="4">
+      <div class="fh"><div class="fn">4</div><h3>Experience &amp; Compensation</h3><span>4 of 5</span></div>
+      <div class="fb">
+        <div class="fg"><label>Facilitation experience &amp; populations served *</label><textarea name="experience" rows="4" required></textarea></div>
+        <div class="fg"><label>How does FFDC's mission align with your values?</label><textarea name="alignment" rows="3"></textarea></div>
+        <div class="fg"><label>Preferred compensation model</label>
+          <div class="checks one"><label class="ci"><input type="radio" name="comp" value="Per-session flat fee"><span>Per-session flat fee</span></label><label class="ci"><input type="radio" name="comp" value="Revenue share"><span>Revenue share on enrollments</span></label><label class="ci"><input type="radio" name="comp" value="Hybrid"><span>Hybrid — retainer + per-session</span></label><label class="ci"><input type="radio" name="comp" value="Open"><span>Open to discussion</span></label></div>
+        </div>
+        <div class="fg"><label>Compensation notes (optional)</label><textarea name="compNotes" rows="2"></textarea></div>
+      </div>
+    </div>
+    <div class="step" data-s="5">
+      <div class="fh"><div class="fn">5</div><h3>References &amp; Final Details</h3><span>5 of 5</span></div>
+      <div class="fb">
+        <div class="fg"><label>Two professional references</label>
+          <div class="fr" style="margin-top:8px">
+            <div style="border:1px solid #e2e0d8;padding:16px"><p style="font-size:13px;font-weight:700;color:#1b3a6b;margin-bottom:12px">Reference 1</p><div class="fg"><label>Name *</label><input name="ref1Name" required></div><div class="fg"><label>Title / Relationship</label><input name="ref1Title"></div><div class="fg"><label>Phone or Email *</label><input name="ref1Contact" required></div></div>
+            <div style="border:1px solid #e2e0d8;padding:16px"><p style="font-size:13px;font-weight:700;color:#1b3a6b;margin-bottom:12px">Reference 2</p><div class="fg"><label>Name</label><input name="ref2Name"></div><div class="fg"><label>Title / Relationship</label><input name="ref2Title"></div><div class="fg"><label>Phone or Email</label><input name="ref2Contact"></div></div>
+          </div>
+        </div>
+        <div class="fg"><label>How did you hear about this opportunity?</label>
+          <div class="checks"><label class="ci"><input type="checkbox" name="source" value="FFDC website"><span>FFDC website</span></label><label class="ci"><input type="checkbox" name="source" value="Church network"><span>Church / Ministry network</span></label><label class="ci"><input type="checkbox" name="source" value="Colleague referral"><span>Colleague referral</span></label><label class="ci"><input type="checkbox" name="source" value="LinkedIn"><span>LinkedIn</span></label><label class="ci"><input type="checkbox" name="source" value="Psychology Today"><span>Psychology Today / TherapyDen</span></label><label class="ci"><input type="checkbox" name="source" value="Other"><span>Other</span></label></div>
+        </div>
+        <div class="fg"><label>Referred by (optional)</label><input name="referredBy"></div>
+        <div class="fg"><label>Anything else we should know?</label><textarea name="notes" rows="3"></textarea></div>
+      </div>
+    </div>
+    <div class="success" id="done">
+      <h3>Application received.</h3>
+      <p>Thank you for your interest in facilitating with FFDC.<br>Someone will be in touch within 3–5 business days.</p>
+    </div>
+    <div class="fnav" id="fnav">
+      <button type="button" class="btn btn-s" id="bk" style="visibility:hidden">← Back</button>
+      <div class="dots"><div class="dot on" data-d="1"></div><div class="dot" data-d="2"></div><div class="dot" data-d="3"></div><div class="dot" data-d="4"></div><div class="dot" data-d="5"></div></div>
+      <button type="button" class="btn btn-p" id="nx">Continue →</button>
+    </div>
+    </form>
+  </div>
+</div></section>
+
+<footer>
+  <p style="color:#c9a84c;font-family:Georgia,serif;font-size:16px;margin-bottom:12px">Faith &amp; Family Development Center</p>
+  <p><a href="mailto:FFDCinfo@gmail.com">FFDCinfo@gmail.com</a></p>
+  <p><a href="tel:4049364186">(404) 936-4186</a></p>
+  <p style="margin-top:8px"><a href="https://fourpillarsfamily.org">fourpillarsfamily.org</a></p>
+</footer>
+
+<script>
+const FORMSPREE='https://formspree.io/f/maqkzlyd';
+let cur=1,tot=5;
+const steps=document.querySelectorAll('.step');
+const nx=document.getElementById('nx'),bk=document.getElementById('bk');
+const pf=document.getElementById('pf'),fnav=document.getElementById('fnav'),done=document.getElementById('done');
+const dots=document.querySelectorAll('.dot');
+function go(n){steps.forEach(s=>s.classList.remove('on'));const t=document.querySelector(`[data-s="${n}"]`);if(t)t.classList.add('on');bk.style.visibility=n===1?'hidden':'visible';nx.textContent=n===tot?'Submit Application':'Continue →';nx.className=n===tot?'btn btn-g':'btn btn-p';pf.style.width=((n/tot)*100)+'%';dots.forEach((d,i)=>{d.classList.remove('on','done');if(i+1<n)d.classList.add('done');else if(i+1===n)d.classList.add('on')});document.getElementById('apply').scrollIntoView({behavior:'smooth',block:'start'})}
+function ok(n){const s=document.querySelector(`[data-s="${n}"]`);let v=true;s.querySelectorAll('[required]').forEach(f=>{if(f.type==='radio'){const g=s.querySelectorAll(`[name="${f.name}"]`);if(!Array.from(g).some(r=>r.checked)){v=false;f.style.outline='2px solid red'}}else if(!f.value.trim()){v=false;f.style.borderColor='red'}else{f.style.borderColor=''}});return v}
+nx.addEventListener('click',()=>{if(!ok(cur))return;if(cur<tot){cur++;go(cur)}else{nx.disabled=true;nx.textContent='Submitting…';fetch(FORMSPREE,{method:'POST',body:new FormData(document.getElementById('ff')),headers:{'Accept':'application/json'}}).then(r=>{if(r.ok){fnav.style.display='none';steps.forEach(s=>s.classList.remove('on'));done.style.display='block';pf.style.width='100%'}else{nx.disabled=false;nx.textContent='Submit Application';nx.className='btn btn-g';alert('Something went wrong. Please email FFDCinfo@gmail.com directly.')}}).catch(()=>{nx.disabled=false;nx.textContent='Submit Application';nx.className='btn btn-g';alert('Something went wrong. Please email FFDCinfo@gmail.com directly.')})}});
+bk.addEventListener('click',()=>{if(cur>1){cur--;go(cur)}});
+document.querySelectorAll('input,textarea,select').forEach(e=>e.addEventListener('input',()=>{e.style.borderColor='';e.style.outline=''}));
+</script>
+</body>
+</html>
